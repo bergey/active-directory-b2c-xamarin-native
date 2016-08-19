@@ -15,17 +15,17 @@ using Microsoft.Identity.Client;
 using TaskClient;
 using TaskClient.Droid;
 
-[assembly: ExportRenderer(typeof(TasksPage), typeof(TasksPageRenderer))]
+[assembly: ExportRenderer(typeof(TasksPage.TasksPage), typeof(TasksPageRenderer))]
 namespace TaskClient.Droid
 {
     class TasksPageRenderer : PageRenderer
     {
-        TasksPage page;
+        TasksPage.TasksPage page;
 
         protected override void OnElementChanged(ElementChangedEventArgs<Page> e)
         {
             base.OnElementChanged(e);
-            page = e.NewElement as TasksPage;
+            page = e.NewElement as TasksPage.TasksPage;
             var activity = this.Context as Activity;
             page.platformParameters = new PlatformParameters(activity);
         }

@@ -116,9 +116,9 @@
     <None Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\TaskClient\TaskClient.csproj">
-      <Name>TaskClient</Name>
-      <Project>{443F9FF3-54CB-4CBE-AD25-D57CE9190DB2}</Project>
+    <ProjectReference Include="..\..\FSharp-PCL\FSharp-PCL.fsproj">
+      <Project>{40db9ae6-53d8-48e4-bb47-db9a0ee79d63}</Project>
+      <Name>FSharp-PCL</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

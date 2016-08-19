@@ -1,5 +1,7 @@
 ﻿using System;
 
+using TaskClient;
+
 using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
@@ -19,7 +21,7 @@ namespace TaskClient.Droid
             base.OnCreate(bundle);
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
-            LoadApplication(new App());
+            LoadApplication(new App.App());
         }
         protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
         {

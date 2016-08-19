@@ -15,17 +15,17 @@ using TaskClient.Droid;
 using Xamarin.Forms.Platform.Android;
 using Microsoft.Identity.Client;
 
-[assembly: ExportRenderer(typeof(WelcomePage), typeof(WelcomePageRenderer))]
+[assembly: ExportRenderer(typeof(WelcomePage.WelcomePage), typeof(WelcomePageRenderer))]
 namespace TaskClient.Droid
 {
     class WelcomePageRenderer : PageRenderer
     {
-        WelcomePage page;
+        WelcomePage.WelcomePage page;
 
         protected override void OnElementChanged(ElementChangedEventArgs<Page> e)
         {
             base.OnElementChanged(e);
-            page = e.NewElement as WelcomePage;
+            page = e.NewElement as WelcomePage.WelcomePage;
             var activity = this.Context as Activity;
             page.platformParameters = new PlatformParameters(activity);
         }
